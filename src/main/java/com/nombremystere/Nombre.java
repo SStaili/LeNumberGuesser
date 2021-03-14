@@ -25,7 +25,10 @@ public class Nombre {
 		int nombre = sc.nextInt();
 		int i = 0;
 		
+<<<<<<< HEAD
 		
+=======
+>>>>>>> 8381ac8e476886172ac0e377dc8436a5df4ee1ee
 			while(i <= 10) {
 				
 			
@@ -44,11 +47,16 @@ public class Nombre {
 					i++;
 				}else if (nombre == r){
 					System.out.println("Vous avez trouvé le nombre mystère " + r);
+<<<<<<< HEAD
 					break;
 				
 				}
 				
 				if ( i == 10){
+=======
+				
+				}else {
+>>>>>>> 8381ac8e476886172ac0e377dc8436a5df4ee1ee
 					System.out.println("Vous avez perdu");
 				}
 							
