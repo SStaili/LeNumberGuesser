@@ -7,7 +7,7 @@ public class Game {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int choice = 0;
-		
+		Nombre n = new Nombre();
 		do {
 			System.out.println("1. Deviner un nombre");
 			System.out.println("2. Challenge IA");
@@ -19,6 +19,7 @@ public class Game {
 			
 			switch(choice) {
 			case 1:
+				n.guestnombre();
 				break;
 			case 2:
 				break;
