@@ -11,7 +11,7 @@ public class Game {
 		do {
 			System.out.println("1. Deviner un nombre");
 			System.out.println("2. Challenge IA");
-			System.out.println("3. Quitter l'application");
+			System.out.println("3. Quitter ");
 			
 			
 			Scanner sc = new Scanner(System.in);
