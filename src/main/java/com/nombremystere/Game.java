@@ -20,10 +20,16 @@ public class Game {
 			
 			switch(choice) {
 			case 1:
+
 				n.GuestNombre();
 				break;
 			case 2:
 				t.remplirTableau();
+
+				n.guestnombre();
+				break;
+			case 2:
+
 				break;
 			
 			}
@@ -33,5 +39,5 @@ public class Game {
 		System.out.println("Fin du programme");
 	}
 
-	
+
 }

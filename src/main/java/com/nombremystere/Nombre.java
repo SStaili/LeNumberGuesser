@@ -1,6 +1,7 @@
 package com.nombremystere;
 
 
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -9,7 +10,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Nombre {
-	
+
 	Random random = new Random();
 	private char[] nbr;
 	private static String nbrList = "0123456789";
@@ -67,6 +68,19 @@ public class Nombre {
 		System.out.println("Vous avez saisi: " + nombre + " " + r);
 		
 	}
+
+	//Random random = new Random();
+	
+	//int r = random.nextInt(10);
+	
+	//public void nombre() {
+		//System.out.println("Saisi nombre");
+		//Scanner sc = new Scanner (System.in);
+		//int nombre = sc.nextInt();
+		//System.out.println("Vous avez saisi: " + nombre);
+		
+	//}
+
 	
 	public void guestnombre() {
 		
@@ -75,14 +89,20 @@ public class Nombre {
 		int nombre = sc.nextInt();
 		int i = 0;
 		
+
 		
+
 			while(i <= 10) {
 				
 			
 				
 				System.out.println("Vous avez saisi: " + nombre);
 				
+
 				if(nombre < r) {
+
+				if(nombre < n) {
+
 					
 					System.out.println("+" );
 					nombre = sc.nextInt();
@@ -99,6 +119,7 @@ public class Nombre {
 				}
 				
 				if ( i == 10){
+
 					System.out.println("Vous avez perdu");
 				}
 							
@@ -152,5 +173,12 @@ public class Nombre {
 
 		
 		
+
+
+					System.out.println("Vous avez perdu");
+				
+				}
+							
+
 	}
 }
