@@ -8,7 +8,8 @@ public class Game {
 		// TODO Auto-generated method stub
 		int choice = 0;
 		Nombre n = new Nombre();
-		TabGen t = new TabGen();
+		n.Generer();
+		
 		do {
 			System.out.println("1. Deviner un nombre");
 			System.out.println("2. Challenge IA");
@@ -20,16 +21,10 @@ public class Game {
 			
 			switch(choice) {
 			case 1:
-
-				n.GuestNombre();
+				n.Comparer();
 				break;
 			case 2:
-				t.remplirTableau();
-
-				n.guestnombre();
-				break;
-			case 2:
-
+				
 				break;
 			
 			}
@@ -39,5 +34,5 @@ public class Game {
 		System.out.println("Fin du programme");
 	}
 
-
+	
 }
