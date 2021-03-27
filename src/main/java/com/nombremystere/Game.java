@@ -9,7 +9,7 @@ public class Game {
 		int choice = 0;
 		Nombre n = new Nombre();
 		n.Generer();
-		String resultat = new String();
+
 		
 		do {
 			System.out.println("1. Deviner un nombre");
@@ -22,10 +22,7 @@ public class Game {
 			
 			switch(choice) {
 			case 1:
-				n.GuessNombre();
-				break;
-			case 2:
-				n.GuessNombre();
+
 				break;
 			
 			}
