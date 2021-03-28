@@ -14,6 +14,7 @@ public class Nombre {
 	private  ArrayList <Integer> tab;
 	
 	private ArrayList <Integer> nombre;
+	private String resultat;
 	
 	public void Generer () {
 		
@@ -55,14 +56,15 @@ public class Nombre {
         
 	}
 	
-	public void Comparer(String resultat) {
+	public void Comparer() {
 		
 		System.out.println("Saisi nombre");
-		System.out.println(this.tab);
+		
 		this.remplirTableau();
 		System.out.println(this.nombre);
 		
-		 resultat = new String();
+		
+		 this.resultat = new String();
 		
 		for(int i = 0; i < 4; i++) {
 			if(this.tab.get(i) > this.nombre.get(i)) {
@@ -91,26 +93,28 @@ public class Nombre {
 	
 	public void GuessNombre() {
 		int k = 0;
-		String resultat = new String();
+	
 		ArrayList<Integer> IA = this.tab;
 		ArrayList<Integer> user = this.nombre;
+		this.Generer();
 		
 		
 	
 		while(k < 10) {
 			
-			this.Comparer(resultat);
+			this.Comparer();
 			
-			if(resultat.equals("====")) {
-				System.out.println("Vous avez gagne");
+			if(this.resultat.equals("====") ){
+				System.out.println("Vous avez gagné le nombre était"  + this.tab);
+				break;
+				
 			}
-			
-			
 			k++;
 		}
-		if(k == 10){
-			System.out.println("Vous avez perdu");
+		if (k ==10) {
+			System.out.println("Vous avez perdu le nombre était" + this.tab);
 		}
+		
 		
 		
 		

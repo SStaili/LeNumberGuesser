@@ -8,7 +8,7 @@ public class Game {
 		// TODO Auto-generated method stub
 		int choice = 0;
 		Nombre n = new Nombre();
-		n.Generer();
+		
 		String resultat = new String();
 		
 		do {
