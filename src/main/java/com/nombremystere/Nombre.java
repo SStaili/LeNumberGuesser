@@ -142,6 +142,7 @@ public class Nombre {
 			}
 			
 			else if(this.nombre == this.tab) {
+				System.out.println(this.tab);
 				System.out.println("IA a gagné"+ "\n"); 
 				break;
 			}
